@@ -1,3 +1,4 @@
+from api import p1_input,p2_input
 board = {
     'T1': ' ', 'T2': ' ', 'T3': ' ',
     'M1': ' ', 'M2': ' ', 'M3': ' ',
@@ -91,7 +92,7 @@ while True:
         break
     while True:     
         if player == 1:  
-            p1_input = input('player one')
+            p1_input = p1_input()
             if p1_input.upper() in board and board[p1_input.upper()] == ' ':
                 board[p1_input.upper()] = 'X'
                 player = 2
@@ -101,7 +102,7 @@ while True:
                 print('Enter Invalid input')
                 continue
         else:
-            p2_input = input('player two')
+            p2_input = p2_input()
             if p2_input.upper() in board and board[p2_input.upper()] == ' ':
                 board[p2_input.upper()] = 'O'
                 player = 1
