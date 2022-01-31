@@ -1,5 +1,5 @@
 from flask import Flask,request
-
+from tic-tac-te import player
 app=Flask(__name__)
 
 @app.route("/p1_input",methods=["POST"])
