@@ -1,4 +1,4 @@
-from api import p1_input,p2_input
+from main import p1_input,p2_input
 board = {
     'T1': ' ', 'T2': ' ', 'T3': ' ',
     'M1': ' ', 'M2': ' ', 'M3': ' ',
